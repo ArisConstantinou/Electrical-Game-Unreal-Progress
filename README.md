@@ -1,8 +1,14 @@
 # Electrical Game Unreal — progress screenshots
 
-These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from 23 September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
+These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
 The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
+
+## 24 September: worker tape measure and height mark
+
+Local Unreal source commit `89bf133` adds a 5 m tape measure made from editable Blender source and native Unreal meshes. In Play, the worker equips it with `5`, measures a vertical wall from the floor, and marks a valid height with `M`. This direct `-game` capture is from a separate QA map, using the same Blueprint functions called by those controls. The automated run reported a valid 1.62 m reading and a spawned graphite mark. The plain test wall and lighting are for verification, not the final building art.
+
+![Unreal Play runtime showing a graduated yellow tape, 1.62 m floor-to-wall reading, graphite height mark, and held tape case](screenshots/tape-measure-height-mark-runtime.png)
 
 ## 23 September: recessed electrical box screw positions
 
