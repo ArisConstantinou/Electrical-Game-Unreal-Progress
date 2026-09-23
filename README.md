@@ -1,8 +1,16 @@
 # Electrical Game Unreal — progress screenshots
 
-These are unaltered 1280 × 720 screenshots captured from the Unreal Engine 5.8 game runtime on 23 September 2026. They show the **current work in progress**, not a finished realistic game. The capture used copies of the `ConstructionSite` map with only the camera position changed; the playable map was not modified for these images.
+These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from 23 September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
 The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
+
+## 23 September: chisel across a two-course brick wall
+
+Local Unreal source commit `84e1c58` replaces the central work wall's solid backing with a second course of hollow bricks and mortar joints. The two images use the same playable map, camera, viewport, and first-person state. Two real left-mouse chisel clicks open a visible hole in the front brick. A separate Geometry Script trace test reached the rear brick after cutting both front-brick faces. The other room walls are still visual brick skins over solid structure.
+
+![Central brick wall before chisel](screenshots/rear-wall-chisel-before.png)
+
+![The same wall after two chisel clicks](screenshots/rear-wall-chisel-after.png)
 
 ## 23 September: scanned plaster material
 
