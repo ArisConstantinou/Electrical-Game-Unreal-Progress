@@ -95,3 +95,13 @@ These six images are direct, unaltered 1280 × 720 Unreal `-game` captures. Each
 ![Same interior camera after structural conversion](screenshots/playable-front-left-after-close-interior.png)
 
 A fresh Editor test cut through both brick wythes with ten point-damage strokes and promoted one head and one bed joint to editable Dynamic Mesh actors. The Windows cook finished 616 packages with no errors or warnings. In a 300-frame static exterior camera comparison, p95 frame time rose from 6.443 to 7.442 ms and mean draw calls from 1,187 to 1,202. The captures do not show finished materials, weather, audio, the remaining structural walls, or in-game SaveGame persistence of cuts.
+
+## 23 September: all nine structural room spans in the playable map
+
+Local Unreal source commit `2c66479` replaces the other eight solid cores and decorative skins. The playable site now has 2,944 two-wythe hollow bricks, 2,692 vertical and 234 horizontal mortar joints, with a 4 cm cavity between the wythes. Six additional cut-brick sizes have their own shell, ribs, collision, and chisel-editable Blueprint. The two images below are direct 1280 × 720 game-runtime captures from QA copies of this playable map with only the camera position changed. The prior wide images above use the same camera positions, so the newly finished right elevation and right return can be compared directly.
+
+![All nine structural masonry spans from the exterior](screenshots/playable-all-nine-structural-exterior.png)
+
+![All nine structural masonry spans from inside the room](screenshots/playable-all-nine-structural-interior.png)
+
+A fresh-process test opened a clear ray through both wythes in every span with ten point-damage strokes per location. A separate test cut rotated mortar on the left return. The Windows cook finished 633 packages with no errors or warnings. In a matched 300-frame Editor runtime comparison against the one-structural-span version, interior p95 frame time changed from 7.109 to 7.778 ms and mean draw calls from 114 to 189. Physical cavity ties, user-made cut persistence through F6/F7, richer materials, and the broader game systems remain unfinished.
