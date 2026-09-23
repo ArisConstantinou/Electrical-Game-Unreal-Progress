@@ -2,6 +2,20 @@
 
 These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: continuous starter wall and hammer proof
+
+The user's saved house was copied into an isolated Unreal preview. Its central 12-course, inward-set work patch was replaced by 16 courses of the same two-wythe hollow-brick and mortar batches used in the neighboring wall. The inner and outer faces now align, with a 4 cm wall cavity. The first pair are direct 1280 × 720 `-game` captures at the same player start and camera. The bright work light and basic surface finish still need art work.
+
+![Original inward-set starter wall in the saved house](screenshots/starter-wall-inward-before.png)
+
+![Continuous starter wall in isolated Unreal preview](screenshots/starter-wall-continuous-preview.png)
+
+The second pair are real game-window captures at the same camera position, immediately before and after five left-click hammer strikes. The hollow clay brick shows a physical hole. The preview Windows cook completed 712 packages with 0 errors and 0 warnings. This repair is **in the isolated preview**, not yet in the user's open main Unreal Editor session.
+
+![Continuous wall before five hammer strikes](screenshots/continuous-wall-hammer-before.png)
+
+![The same brick after five hammer strikes](screenshots/continuous-wall-hammer-after-five-hits.png)
+
 ## 24 September: worker spirit level
 
 Local Unreal source commit `7b568a4` adds the 600 mm aluminium spirit level as an editable Blender model imported to native Unreal meshes. In Play, `8` selects it; it seats against an aimed wall or floor and moves the appropriate physical air bubble. These direct `-game` screenshots come from plain QA scenes, not finished building art. The vertical-wall and 10° leaning-wall tests passed, and the lower plumb bubble visibly shifts to the right in the leaning-wall image. The flat-floor horizontal-vial test passed separately. The feature is verified in the isolated Unreal branch and has not yet been integrated into the user's open main Editor session.
