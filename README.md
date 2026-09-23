@@ -2,6 +2,16 @@
 
 These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: worker spirit level
+
+Local Unreal source commit `7b568a4` adds the 600 mm aluminium spirit level as an editable Blender model imported to native Unreal meshes. In Play, `8` selects it; it seats against an aimed wall or floor and moves the appropriate physical air bubble. These direct `-game` screenshots come from plain QA scenes, not finished building art. The vertical-wall and 10° leaning-wall tests passed, and the lower plumb bubble visibly shifts to the right in the leaning-wall image. The flat-floor horizontal-vial test passed separately. The feature is verified in the isolated Unreal branch and has not yet been integrated into the user's open main Editor session.
+
+![Spirit level on a vertical test wall with the plumb bubble centred](screenshots/spirit-level-plumb-vertical-runtime.png)
+
+![Same spirit level on a 10 degree leaning wall with the plumb bubble shifted](screenshots/spirit-level-plumb-10deg-runtime.png)
+
+![Spirit level on a flat test floor with the horizontal vial visible](screenshots/spirit-level-floor-runtime.png)
+
 The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
 
 ## 24 September: worker tape measure and height mark
