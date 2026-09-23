@@ -117,3 +117,19 @@ The local Unreal project now gives all ten brick sizes six open lengthwise cells
 ![All nine structural walls with the open-cell brick meshes, interior](screenshots/playable-open-cell-all-nine-interior.png)
 
 All nine two-wythe wall spans still passed the ten-strike through-wall test, and the half/short brick promotion and mortar fill checks passed. In a matched 300-frame exterior Editor-runtime comparison, mean GPU time changed from 2.812 to 2.948 ms and mean frame time from 4.985 to 5.197 ms; neither run had a frame above 16.67 ms. This is a static-camera Editor test, not packaged or active-chisel performance proof. In-game F6/F7 persistence is under development.
+
+## 23 September: adjustable walls, rooms, floors, and first-person hammer
+
+Local Unreal source commit `ac69fb7` adds draggable Blueprint markers for a hollow-brick wall with editable Rows and Columns and a room with editable width, depth, wall rows, and floor count. The default room has a 4 × 4 m **outer** footprint. This QA example uses two 2.8 m-high levels, three 20 cm concrete slabs, and 1,904 full-brick instances across eight wall spans. Each span uses batched intact bricks that can promote a hit brick into an editable hollow-brick actor. A test verified that resizing a wall or room after brick demolition is blocked to preserve the cut work. These are unaltered 1280 × 720 Unreal `-game` captures from the isolated QA map. The sand-coloured QA ground was added only for this progress view.
+
+![Two-floor generated brick room, exterior](screenshots/room-generator-4x4m-two-floors-exterior.png)
+
+For the cutaway, the camera-facing two walls and roof slab are hidden **only in the QA map** so the two room levels and intermediate slab can be inspected. The generated room asset itself retains all four walls per floor and the roof.
+
+![Two-floor generated brick room with QA cutaway](screenshots/room-generator-4x4m-two-floors-cutaway.png)
+
+The following playable first-person capture shows the imported Electrical Game demolition hammer with its exposed chisel. Left-click still uses the Blueprint point-damage ray to hit individual bricks. The tool model and static pose need an animation, material and sound pass; the screenshot is not a claim of a finished worker tool.
+
+![Visible first-person demo hammer and chisel against the brick wall](screenshots/demo-hammer-first-person-in-unreal.png)
+
+The new Editor commands are under **Tools > Wire the House**. The user's saved `ConstructionSite.umap` was kept out of the source commit. A Windows cook of the actual user project finished 658 packages without errors. Doorways, stairs, electrical boxes, playable in-game room generation, finished surfaces, audio, and wider performance tests remain to be built.
