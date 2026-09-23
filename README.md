@@ -4,6 +4,16 @@ These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from 23 Septe
 
 The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
 
+## 23 September: recessed electrical box screw positions
+
+Local Unreal project commit `6bb41c2` adds editable 1G and 2G box models and native Static Meshes. The 1G has four open screw bores (top, bottom, left, right); the 2G has two (left and right). The first image is a front render of the actual editable Blender meshes, with the **2G on the left** and **1G on the right**. It is a model inspection render, not an Unreal screenshot.
+
+![Front render of 2G and 1G recessed boxes with their actual screw holes](screenshots/electrical-boxes-screw-position-layout.png)
+
+The next image is an unaltered Unreal `-game` capture from an isolated worktree. It shows the 1G and 2G meshes added to a live held assembly in the first-person construction scene. The lighting and box materials are still provisional; wall fit and final installation are not verified by this image.
+
+![Live 2G plus 1G box assembly inside the Unreal game runtime](screenshots/electrical-boxes-2g-1g-unreal-runtime.png)
+
 ## 23 September: faster two-course brick wall
 
 Local Unreal source commit `54e2d51` batches the 90 intact rear bricks while preserving their individual chisel cuts: the selected instance becomes a cuttable Blueprint brick when struck. The 90 rear mortar joints remain separate editable actors. The two matched 1280 × 720 game captures below use the same camera and show the wall before and after this rendering change. In a 300-frame static-camera comparison, draw calls fell from 1,511 to 1,244 on average; average frame time was effectively unchanged near the 240 FPS limit.
