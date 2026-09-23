@@ -4,6 +4,18 @@ These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from 23 Septe
 
 The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
 
+## 23 September: faster two-course brick wall
+
+Local Unreal source commit `54e2d51` batches the 90 intact rear bricks while preserving their individual chisel cuts: the selected instance becomes a cuttable Blueprint brick when struck. The 90 rear mortar joints remain separate editable actors. The two matched 1280 × 720 game captures below use the same camera and show the wall before and after this rendering change. In a 300-frame static-camera comparison, draw calls fell from 1,511 to 1,244 on average; average frame time was effectively unchanged near the 240 FPS limit.
+
+![Brick wall with fully dynamic rear course before batching](screenshots/batched-masonry-before.png)
+
+![The same brick wall after rear bricks were batched](screenshots/batched-masonry-after.png)
+
+The next unaltered game-window capture shows a small hole after three real chisel clicks. The still image cannot prove which brick layer received the third hit; an Unreal actor/ray test separately verified that the rear instance was replaced and cut.
+
+![Batched wall after three chisel clicks in the game window](screenshots/batched-masonry-three-chisel-clicks.png)
+
 ## 23 September: chisel across a two-course brick wall
 
 Local Unreal source commit `84e1c58` replaces the central work wall's solid backing with a second course of hollow bricks and mortar joints. The two images use the same playable map, camera, viewport, and first-person state. Two real left-mouse chisel clicks open a visible hole in the front brick. A separate Geometry Script trace test reached the rear brick after cutting both front-brick faces. The other room walls are still visual brick skins over solid structure.
