@@ -2,7 +2,15 @@
 
 These are unaltered 1280 × 720 screenshots captured from the Unreal Engine 5.8 game runtime on 23 September 2026. They show the **current work in progress**, not a finished realistic game. The capture used copies of the `ConstructionSite` map with only the camera position changed; the playable map was not modified for these images.
 
-Source project state: branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
+The first three screenshots below were captured from branch `codex/electrical-physical-mortar`, commit `6a90ac8`. The original Electrical Game web project remains separate. This repository contains screenshots only, not the Unreal project or a downloadable game.
+
+## 23 September: scanned plaster material
+
+The Unreal project now uses a [Poly Haven Plastered Wall 02](https://polyhaven.com/a/plastered_wall_02) CC0 scan for nine construction-site plaster surfaces, with diffuse, normal, and roughness maps. These two unaltered runtime screenshots are from local Unreal project commit `508078a`. The exterior uses a copy of the playable map with only its camera moved; the wall screenshot comes from the playable map. This is a material improvement on a still-primitive building, not finished architecture.
+
+![Construction building exterior with scanned plaster](screenshots/building-exterior-pbr.png)
+
+![Playable map wall with scanned plaster on both sides](screenshots/wall-main-pbr.png)
 
 ## Mortar station
 
