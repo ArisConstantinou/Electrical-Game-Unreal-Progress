@@ -105,3 +105,15 @@ Local Unreal source commit `2c66479` replaces the other eight solid cores and de
 ![All nine structural masonry spans from inside the room](screenshots/playable-all-nine-structural-interior.png)
 
 A fresh-process test opened a clear ray through both wythes in every span with ten point-damage strokes per location. A separate test cut rotated mortar on the left return. The Windows cook finished 633 packages with no errors or warnings. In a matched 300-frame Editor runtime comparison against the one-structural-span version, interior p95 frame time changed from 7.109 to 7.778 ms and mean draw calls from 114 to 189. Physical cavity ties, user-made cut persistence through F6/F7, richer materials, and the broader game systems remain unfinished.
+
+## 23 September: real open clay cells and ridged faces
+
+The local Unreal project now gives all ten brick sizes six open lengthwise cells and real raised lines on both long faces, following the supplied hollow-brick photo. The prior mesh enclosed its internal voids at both ends, making the wall look flat. These are direct, unaltered 1280 × 720 `-game` screenshots of the playable map; the corner view uses a separate map copy only to place the camera beside the exposed brick ends. The clay adds normal and roughness detail from [Poly Haven's CC0 Clay Plaster scan](https://polyhaven.com/a/clay_plaster), tinted to fired-clay red-orange. The geometry still needs more natural edge variation, and the scene lighting and mortar finish need work.
+
+![Open six-cell brick ends and ridged long faces at the playable room corner](screenshots/playable-open-cell-corner.png)
+
+![All nine structural walls with the open-cell brick meshes, exterior](screenshots/playable-open-cell-all-nine-exterior.png)
+
+![All nine structural walls with the open-cell brick meshes, interior](screenshots/playable-open-cell-all-nine-interior.png)
+
+All nine two-wythe wall spans still passed the ten-strike through-wall test, and the half/short brick promotion and mortar fill checks passed. In a matched 300-frame exterior Editor-runtime comparison, mean GPU time changed from 2.812 to 2.948 ms and mean frame time from 4.985 to 5.197 ms; neither run had a frame above 16.67 ms. This is a static-camera Editor test, not packaged or active-chisel performance proof. In-game F6/F7 persistence is under development.
