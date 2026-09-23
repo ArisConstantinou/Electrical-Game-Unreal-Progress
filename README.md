@@ -75,3 +75,23 @@ Local source commit `6a534e3` keeps already-cut brick meshes intact when this QA
 ![Unaltered close crop of the same through-hole](screenshots/structural-room-cut-close.png)
 
 Saving arbitrary player-made damage through the in-game level editor is still unfinished.
+
+## 23 September: first structural room span in the playable map
+
+Local Unreal source branch `codex/electrical-room-brick-structure`, commit `10bad1d`, promotes the validated front-left wall into `/Game/Maps/ConstructionSite`. The old solid core and decorative 4 cm brick faces are gone from this span. Two layers of 320 hollow bricks surround a 4 cm cavity, with 288 vertical and 30 horizontal mortar joints. The other eight room spans still have their old solid cores and thin brick faces.
+
+These six images are direct, unaltered 1280 × 720 Unreal `-game` captures. Each close before/after pair uses the same camera and viewport. The wide after views show the wall in the room and on the exterior elevation; the neighboring right-hand exterior span still shows the old construction.
+
+![Playable front-left wall, exterior before conversion](screenshots/playable-front-left-before-close-exterior.png)
+
+![Same exterior camera after structural conversion](screenshots/playable-front-left-after-close-exterior.png)
+
+![New wall beside the unconverted right-hand span, wider exterior view](screenshots/playable-front-left-after-wide-exterior.png)
+
+![New wall seen from inside the room](screenshots/playable-front-left-after-wide-interior.png)
+
+![Playable front-left wall, interior before conversion](screenshots/playable-front-left-before-close-interior.png)
+
+![Same interior camera after structural conversion](screenshots/playable-front-left-after-close-interior.png)
+
+A fresh Editor test cut through both brick wythes with ten point-damage strokes and promoted one head and one bed joint to editable Dynamic Mesh actors. The Windows cook finished 616 packages with no errors or warnings. In a 300-frame static exterior camera comparison, p95 frame time rose from 6.443 to 7.442 ms and mean draw calls from 1,187 to 1,202. The captures do not show finished materials, weather, audio, the remaining structural walls, or in-game SaveGame persistence of cuts.
