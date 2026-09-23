@@ -67,3 +67,11 @@ Local Unreal source branch `codex/electrical-room-brick-structure`, commit `ada6
 ![Two-layer hollow-brick wall with batched editable mortar in the QA map](screenshots/structural-room-brick-qa.png)
 
 A scripted test cut a through-opening after ten chisel blows. The mortar batch test confirmed the hit joint was promoted to editable geometry. In a 300-frame comparison of the QA wall, mean draw calls were 1,127 with each mortar joint as a separate actor and 100 with intact joints batched. The batched wall's GPU time remained above the original solid-core wall, so further performance and visual work is needed before promoting all nine room spans.
+
+Local source commit `6a534e3` keeps already-cut brick meshes intact when this QA level reloads. The next full-frame game-runtime capture shows the through-hole after ten real point-damage steps. The small image below is an unaltered pixel crop of that same capture, supplied so the hole is clear on a phone.
+
+![Saved QA wall after ten chisel hits, full game frame](screenshots/structural-room-cut-runtime.png)
+
+![Unaltered close crop of the same through-hole](screenshots/structural-room-cut-close.png)
+
+The saved-cut flag is applied in this QA map. Saving arbitrary player-made damage through the in-game level editor is still unfinished.
