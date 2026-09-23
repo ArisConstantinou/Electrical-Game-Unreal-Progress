@@ -57,3 +57,13 @@ The exterior basin uses Unreal's Water plugin. Its current colour and shoreline 
 ![Exterior Unreal water basin](screenshots/native-water.png)
 
 These still images verify rendered scene content only. They do not prove final visual quality, performance, character animation, weather, audio, or end-to-end interaction.
+
+## 23 September: structural room-wall QA sample
+
+Local Unreal source branch `codex/electrical-room-brick-structure`, commit `ada6afa`, contains a separate QA map copy of the front-left room wall. Its old solid mortar core and thin brick faces were replaced in that copy by two layers of real hollow clay bricks with a 4 cm cavity and individual, chisel-editable head and bed mortar joints. These are direct 1280 × 720 game-runtime captures from the same camera; the rest of the playable room walls have **not** yet been converted.
+
+![Original front-left room wall in the QA map](screenshots/structural-room-original-qa.png)
+
+![Two-layer hollow-brick wall with batched editable mortar in the QA map](screenshots/structural-room-brick-qa.png)
+
+A scripted test cut a through-opening after ten chisel blows. The mortar batch test confirmed the hit joint was promoted to editable geometry. In a 300-frame comparison of the QA wall, mean draw calls were 1,127 with each mortar joint as a separate actor and 100 with intact joints batched. The batched wall's GPU time remained above the original solid-core wall, so further performance and visual work is needed before promoting all nine room spans.
