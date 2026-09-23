@@ -12,6 +12,12 @@ The Unreal project now uses a [Poly Haven Plastered Wall 02](https://polyhaven.c
 
 ![Playable map wall with scanned plaster on both sides](screenshots/wall-main-pbr.png)
 
+## 23 September: masonry courses and mortar head joints
+
+Local Unreal project commit `03e6bf3` adds 12 half bricks at alternating course boundaries and 78 independent vertical mortar joints. The new joints use Blueprint Geometry Script for chisel subtraction and mortar fill; an editor-world damage test verified mesh changes for both actions. The screenshot below is from the playable map in the Unreal game runtime at the same camera as `wall-main-pbr.png`. It shows the closed gaps, but the clay and mortar materials are still visually simple.
+
+![Playable wall with filled masonry courses and vertical mortar joints](screenshots/wall-head-joints.png)
+
 ## Mortar station
 
 The visible 5 L water jug and 20 L bucket are separate Blueprint actors. Their finite water transfer and targeted player controls exist, but the pouring animation, refill, complete mortar sequence, sounds, and final materials are unfinished.
