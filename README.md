@@ -2,6 +2,12 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: current playable Unreal window
+
+Direct screenshot from the isolated preview's running `-game` window. The player currently starts facing a brick wall with a visible demolition hammer. This is the actual playable prototype, still far from the requested complete game. The user-built house remains saved separately in the main Unreal Editor project.
+
+![Current Unreal Play window with brick wall and demolition hammer](screenshots/current-unreal-play-window-24-september.png)
+
 ## 24 September: cordless mortar mixer model in progress
 
 This is a render of the editable Blender source model, with separate motor body and paddle meshes. It has **not** yet been imported into the playable Unreal game or connected to mixing controls.
