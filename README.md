@@ -2,6 +2,14 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: rejected field-brick demolition fixture
+
+These are direct 1280 × 720 Unreal `-game` screenshots from the same isolated QA map, camera, and lighting. A Blueprint material field and Geometry Script Boolean remove real clay from one four-bore brick; a separate commandlet test confirmed changing mesh volume and collision on repeated point damage. The visual result below is **rejected**: the cut is a small stepped opening in one brick. It does not make the continuous irregular chase through render, mortar, multiple hollow bricks and exposed internal webs shown in the user's construction references. There is no debris or playable hammer integration in this fixture. Local experimental source commit: `a3ef188`; the author's house was not replaced.
+
+![Rejected field-brick QA before damage](screenshots/field-brick-qa-rejected-before.png)
+
+![Rejected field-brick QA after one local cut](screenshots/field-brick-qa-rejected-after.png)
+
 ## 24 September: experimental local masonry stress and shell cut
 
 These two direct 1280 × 720 Unreal `-game` captures use one isolated QA copy of the saved construction site at the same camera. One strike weakens the chosen four-bore clay brick without changing its mesh. A second, oblique strike uses a native Geometry Script Boolean to remove a wider irregular shell flake. Fresh-process tests found a closed mesh and measured material removal; batched-brick promotion and a neighboring untouched instance were checked separately. The screenshots show a still-dark, overly simple opening. This is an **experimental branch**, not the completed Electrical Game destructive masonry: mortar continuity, connected fracture/support, physical debris, stress replay and frame-time peaks still need implementation and validation. The user's main playable project still has the earlier cut behavior.
