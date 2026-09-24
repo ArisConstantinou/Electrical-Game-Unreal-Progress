@@ -2,6 +2,14 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: physical cement sack and finite trowel load
+
+Local isolated Unreal source commit `4358470` adds an editable 25 kg cement sack, a separate tear seal and opened mouth, and a visible 504 g dry-cement load on the worker's trowel. This image is a **Blender model inspection render**, not a game screenshot. The paper shape and printed finish still need art refinement.
+
+In Unreal Play, the first left-click on an aimed sack opens it; the next takes one 504 g scoop. A left-click on the 20 L bucket deposits the carried dose if it fits. Seven actual `-game` Blueprint checks passed: tear, scoop, tool-switch retention, duplicate scoop rejection, deposit, full-bucket setup, and full-bucket retention. The Windows cook passed with zero errors and warnings. This is still in the isolated preview while the user's main Unreal Editor is open.
+
+![Editable cement sack with open mouth, early model render](screenshots/cement-bag-open-blender-source-preview.png)
+
 ## 24 September: worker mortar trowel model
 
 Local Unreal source commit `4ee46f7` adds a Blueprint-only held trowel. In Play, `9` equips it; left-clicking the 20 L bucket loads 70 g from the temporary finite wet mortar stock, and left-clicking a mortar joint applies that load. A separate Unreal `-game` Blueprint QA run passed both the 70 g transfer and edited-joint checks, followed by a Windows cook with 0 errors and 0 warnings. The mixing shortcut and plain materials remain prototypes. This feature is in the isolated preview branch and has not yet been integrated into the user's open main Editor session.
