@@ -181,3 +181,13 @@ The following playable first-person capture shows the imported Electrical Game d
 ![Visible first-person demo hammer and chisel against the brick wall](screenshots/demo-hammer-first-person-in-unreal.png)
 
 The new Editor commands are under **Tools > Wire the House**. The user's saved `ConstructionSite.umap` was kept out of the source commit. A Windows cook of the actual user project finished 658 packages without errors. Doorways, stairs, electrical boxes, playable in-game room generation, finished surfaces, audio, and wider performance tests remain to be built.
+
+## 24 September: finite sand shovel in Play
+
+Local isolated Unreal source commit `3a473cb` adds an editable square-mouth shovel, a separate visible 2.24 kg sand load, and a 600 kg stockpile Blueprint. The stockpile is an asset placed in the full Unreal Level Editor while Play is stopped; pressing `0` equips the shovel during Play. Left-click takes sand only from the pile under the crosshair and deposits it only into the bucket under the crosshair. A runtime test passed six mass checks, including no second scoop while loaded, load retained after tool switching, and load retained when the 20 L bucket rejects an overflow. Windows cook completed 732 packages with 0 errors and 0 warnings. This commit is in the isolated preview checkout; it has not yet been copied into the user's open Unreal Editor project.
+
+The first image is a Blender render of the actual editable shovel model. The second is an unaltered 1280 × 720 Unreal `-game` screenshot with the shovel equipped in a copied brick-site level. It shows the current prototype pose and materials, not a finished character, animation or final lighting. The stockpile is tested in a separate QA scene and is not shown here.
+
+![Editable sand shovel model preview](screenshots/sand-shovel-blender-source-preview.png)
+
+![Sand shovel held in the Unreal brick-site runtime](screenshots/sand-shovel-in-unreal-brick-site.png)
