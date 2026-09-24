@@ -1,6 +1,14 @@
 # Electrical Game Unreal — progress screenshots
 
-These are real 1280 × 720 Unreal Engine 5.8 game-runtime captures from September 2026. They show the **current work in progress**, not a finished realistic game. Most images are direct in-engine screenshots. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
+This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
+
+## 24 September: worker mortar trowel model
+
+Local Unreal source commit `4ee46f7` adds a Blueprint-only held trowel. In Play, `9` equips it; left-clicking the 20 L bucket loads 70 g from the temporary finite wet mortar stock, and left-clicking a mortar joint applies that load. A separate Unreal `-game` Blueprint QA run passed both the 70 g transfer and edited-joint checks, followed by a Windows cook with 0 errors and 0 warnings. The mixing shortcut and plain materials remain prototypes. This feature is in the isolated preview branch and has not yet been integrated into the user's open main Editor session.
+
+The image below is a **Blender model inspection render** of the editable trowel mesh and smaller 70 g wet-mortar mound. It is not an Unreal gameplay screenshot or proof of final material quality.
+
+![Editable 235 mm trowel and low 70 g mortar load model preview](screenshots/mortar-trowel-70g-model-preview.png)
 
 ## 24 September: continuous starter wall and hammer proof
 
