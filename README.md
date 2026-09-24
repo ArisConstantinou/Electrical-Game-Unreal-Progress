@@ -2,6 +2,12 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: playable worker station in the isolated Unreal preview
+
+This is a direct capture from `/Game/Maps/PlayableWorkshopV2`, a copy of the construction level that leaves the user's saved level untouched. The player now starts facing a physical sand stockpile, water jug, mortar bucket, and 25 kg cement sack. The meshes and materials are still early prototypes; the staged mixer workflow is not yet connected.
+
+![Playable station with sand, water jug, mortar bucket and cement sack](screenshots/playable-workshop-sand-water-bucket-cement.png)
+
 ## 24 September: current playable Unreal window
 
 Direct screenshot from the isolated preview's running `-game` window. The player currently starts facing a brick wall with a visible demolition hammer. This is the actual playable prototype, still far from the requested complete game. The user-built house remains saved separately in the main Unreal Editor project.
