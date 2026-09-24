@@ -2,6 +2,12 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 24 September: cordless mortar mixer model in progress
+
+This is a render of the editable Blender source model, with separate motor body and paddle meshes. It has **not** yet been imported into the playable Unreal game or connected to mixing controls.
+
+![Editable cordless mortar mixer model preview](screenshots/cordless-mortar-mixer-blender-source-preview.png)
+
 ## 24 September: physical cement sack and finite trowel load
 
 Local isolated Unreal source commit `4358470` adds an editable 25 kg cement sack, a separate tear seal and opened mouth, and a visible 504 g dry-cement load on the worker's trowel. This image is a **Blender model inspection render**, not a game screenshot. The paper shape and printed finish still need art refinement.
