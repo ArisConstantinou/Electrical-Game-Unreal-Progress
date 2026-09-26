@@ -1,0 +1,217 @@
+{
+  "date": "2026-09-26",
+  "sourceCommit": "58906eaa7c3b4d0d5c5a31e2198c5eaa3fdfbb31",
+  "description": "Unmodified copies of authored-model renders and native Unreal captures. Contact sheets contain labeled comparison frames.",
+  "files": [
+    {
+      "file": "after-front.png",
+      "bytes": 628803,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "c0bfabdda82309e0519307a1f183f84a6839dbc645670d4455024a9e953ff785"
+    },
+    {
+      "file": "after-grips.png",
+      "bytes": 1164235,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d477484fef411c055b56c7164fafa1af6fdceaef8d9b4c29eeabb70f58abe18c"
+    },
+    {
+      "file": "after-side.png",
+      "bytes": 579081,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "415bf91f43784637d6eee02d6462a2fb1f56403b89a32ed9c85ef17e30848682"
+    },
+    {
+      "file": "after-wrists-left.png",
+      "bytes": 674711,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "f80d39e6bfeb8e077211d68326601c40a7e25a6ddb702ed9f16fb7b83c6548ce"
+    },
+    {
+      "file": "after-wrists-right.png",
+      "bytes": 754835,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "b643b4e1e51e1e0d80af3556bc9afb92302b8ae14bf51dd399663f0bd60253d0"
+    },
+    {
+      "file": "before-after.png",
+      "bytes": 440754,
+      "width": 1600,
+      "height": 540,
+      "sha256": "6ffd5285fc2729eb2e330ab975f1d5de5ceb7b673d503dd28c6ed9c882511b72"
+    },
+    {
+      "file": "before-front.png",
+      "bytes": 613513,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "272403c3c786501157cdcda19ca427e4823e63fea3d7a122ca68eb906c105765"
+    },
+    {
+      "file": "before-grips.png",
+      "bytes": 1013594,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "5a23c7a00514b2c11a2192dc08d8f492d653db7cdd62b3c638862b4160ae4952"
+    },
+    {
+      "file": "before-side.png",
+      "bytes": 487992,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "ba54d15a02dd56ec6253cd6f4bafd3d33bf572400605be31e01683fc1cce2d9e"
+    },
+    {
+      "file": "fps-CameraFirstPerson.png",
+      "bytes": 2009528,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "317c0fd6b7693675b40e926eaaa68ef62483575226ce3c33008201e25742da8b"
+    },
+    {
+      "file": "fps-CameraThirdPerson.png",
+      "bytes": 1733314,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "19830e582e77a3f8d3a7ba6eceef43d6b69ab494ba9b9743d159777648b7d61b"
+    },
+    {
+      "file": "fps-down.png",
+      "bytes": 2049920,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "3840ebc8bb05a7e3427e22f486772068a9790c03acb65f8f1fae9ea9bc9ff262"
+    },
+    {
+      "file": "fps-far.png",
+      "bytes": 2118349,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "46f6849ea0b0cc4bf81c364b65a86598f154a3be1d1e6adee7c8ac703362f905"
+    },
+    {
+      "file": "fps-fire-contact-after.png",
+      "bytes": 2012036,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "a425d58205d564298fd1fbcd6b03b2eec6baef7e820fd9cdb75ed61eacc6ba41"
+    },
+    {
+      "file": "fps-fire-contact.png",
+      "bytes": 1995812,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "426e414f610f0337209b07cad9c70e550113ade498517bcfcf48f2c952f47083"
+    },
+    {
+      "file": "fps-fire-far-after.png",
+      "bytes": 2122548,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d7c631beaa5114989191fc9ae03b5247ae813f92d7f747ea4e18900b4a8503b2"
+    },
+    {
+      "file": "fps-fire-far.png",
+      "bytes": 2118438,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "b2ce5c3e841d05dd48ce11de6ad1daed3f94068379ede55bdcf191642ffb91b2"
+    },
+    {
+      "file": "fps-near.png",
+      "bytes": 1864819,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "405dba49e2813890d0ee32af49b2ebb8f542019cc9748205e8023ed4df9750e3"
+    },
+    {
+      "file": "fps-oblique.png",
+      "bytes": 2253975,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "48c0796977b0e0b5e8a0d272f9d61a9287e1244c402acd969d05e06075f1eb15"
+    },
+    {
+      "file": "fps-performance-after.png",
+      "bytes": 1998993,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "8803ac1fd6e5455957a4d9dd97121e0f93cb1f45bfd0f56a33a420b4c7501e05"
+    },
+    {
+      "file": "fps-performance-before.png",
+      "bytes": 1962636,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "4e004b9040b4c70ee0f36bfd417c12aeaa973ef8ba4ca0eae7cddf4aaf155c1a"
+    },
+    {
+      "file": "fps-SelectHammer.png",
+      "bytes": 2018742,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "4738ca904fb14c57733595c836986ec87254eb1f8f668708705772c0a8af529e"
+    },
+    {
+      "file": "fps-SelectTapeMeasure.png",
+      "bytes": 1979335,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "10f05ca141f15dfb9852c590fdd75558c06754871c061737c4c627df8e3f3392"
+    },
+    {
+      "file": "fps-up.png",
+      "bytes": 1974143,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "8faf04663cb99a9110c42d690f02e351bd25ae2cbc20541e3c91a33cd49e6ad8"
+    },
+    {
+      "file": "fps-views.png",
+      "bytes": 2704255,
+      "width": 2400,
+      "height": 1080,
+      "sha256": "5a21d421cb4b99063eac08749287b6222e25452f75ebd2fe151ec4b473903b14"
+    },
+    {
+      "file": "fps-working.png",
+      "bytes": 1997809,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "677d14f333cb1fa1957814320650d01f3e276e32673c926ed6820e5b4cc1688d"
+    },
+    {
+      "file": "impact-before-after.png",
+      "bytes": 860958,
+      "width": 1600,
+      "height": 540,
+      "sha256": "a3f0c04e8089bc878d80e2e159269176e34121536342da75d6a9a8d5d72c0261"
+    },
+    {
+      "file": "model-side.png",
+      "bytes": 1392397,
+      "width": 1400,
+      "height": 1000,
+      "sha256": "05893ca5c5251e8dd0a7c0652dda0c75a2218f208cad21590de7a2dd90f01c20"
+    },
+    {
+      "file": "model-three-quarter.png",
+      "bytes": 1398332,
+      "width": 1400,
+      "height": 1000,
+      "sha256": "3c2a26a2cbf7cb4e4b2241a46a299f2c6d942c9af5d3c9035ac285ad74eaa6d1"
+    },
+    {
+      "file": "showcase-front.png",
+      "bytes": 624341,
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d78a09bbc9e74185b31b79ce52e5ebec7c3545d532bd1998e5e20c54a4d8819a"
+    }
+  ]
+}

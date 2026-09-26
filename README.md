@@ -2,6 +2,18 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 26 September: FHACO745 model, two-hand hold and FPS
+
+**[Open the full 30-image gallery](screenshots/2026-09-26-fhaco745/README.md)** — tool model, full-body front, grip and wrist close-ups, matched before/after views, six FPS conditions, and wall-contact checks. Source: local Unreal commit `58906ea` in the isolated worker-rig preview.
+
+The first image is a Blender render of the actual editable FHACO745 reconstruction, based on the user-selected Milwaukee reference; it is not manufacturer CAD. The second is a labeled comparison of matched Unreal runtime captures. The third is a direct 1600 × 1000 first-person Unreal screenshot. Original images, source notes and file hashes are preserved in the gallery. Existing game lighting and clothing remain work in progress; this publication does not promote the preview into the main Unreal project.
+
+![FHACO745 editable model, Blender render](screenshots/2026-09-26-fhaco745/model-three-quarter.png)
+
+![Matched Unreal comparison of original and updated two-hand hold](screenshots/2026-09-26-fhaco745/before-after.png)
+
+![Full-scale FHACO745 and both hands in the Unreal first-person view](screenshots/2026-09-26-fhaco745/fps-working.png)
+
 ## 24 September: rejected shared-wall chase fixture
 
 These are direct, unaltered 1280 × 720 Unreal `-game` screenshots from the same fixed camera in an isolated QA map. A single persistent Blueprint material field processed nine sequential impacts across three four-bore clay brick courses and two mortar beds. Tests measured 1,113 removed material nodes and volume loss in all five closed meshes; Windows cook passed. **The visual result is still rejected**: the chase appears as a dark stepped slot. It does not show the broken clay ribs and bores, rough plaster edges, debris piles, or installed conduit in the user's real construction photos. The hits were scripted for QA, not made with the player's hammer; the user's saved house was not replaced. Local experimental source commit: `ab1ecb7`.
