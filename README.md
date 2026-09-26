@@ -2,6 +2,16 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 26 September: rear-wrist correction and held-input wall preview
+
+**[Open the new 8-image gallery](screenshots/2026-09-26-wrist-wall/README.md)** — matched wrist comparison, actual FPS before/after held-trigger use, and the editor-generated wall. Local source commit `1bf300a`.
+
+The wrist is straighter and the hammer now repeats its physical-tip input while held. Wall/room generators remain in the full Level Editor. **Fracture appearance is still rejected as too stepped; a 37.63 ms hit-frame peak remains.** This is an isolated functional preview, not a finished demolition release or promotion into the main game.
+
+![Matched rear-wrist correction in Unreal](screenshots/2026-09-26-wrist-wall/wrist-comparison.png)
+
+![FPS wall-breaking prototype with visibly unfinished fracture](screenshots/2026-09-26-wrist-wall/wall-after.png)
+
 ## 26 September: FHACO745 model, two-hand hold and FPS
 
 **[Open the full 30-image gallery](screenshots/2026-09-26-fhaco745/README.md)** — tool model, full-body front, grip and wrist close-ups, matched before/after views, six FPS conditions, and wall-contact checks. Source: local Unreal commit `58906ea` in the isolated worker-rig preview.

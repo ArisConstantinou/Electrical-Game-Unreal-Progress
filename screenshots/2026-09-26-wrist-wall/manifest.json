@@ -1,0 +1,38 @@
+{
+  "source_commit": "1bf300a173a8605aebb85b3b3b6456db7c9f6c2f",
+  "baseline_commit": "58906eaa7c3b4d0d5c5a31e2198c5eaa3fdfbb31",
+  "images": {
+    "wrist-comparison.png": {
+      "bytes": 772167,
+      "sha256": "2efb04e362c52af1ce2a61fb4d6f74773f045bd0451572ff3a6a979874662adb"
+    },
+    "before-grips.png": {
+      "bytes": 1174865,
+      "sha256": "35510c75bf62c130de459b46a7837ad80c3c032b54d9559bcc9d039fed8507d6"
+    },
+    "after-grips.png": {
+      "bytes": 1171266,
+      "sha256": "fd14da8a6f7de6895438150ca31b8d9f8a610957452af783d0f08934f5007d28"
+    },
+    "before-wrists-right.png": {
+      "bytes": 761157,
+      "sha256": "bc17b6f56233020c90a4dce783203b389907b980fb915fd30fe9f61f0063e4b3"
+    },
+    "after-wrists-right.png": {
+      "bytes": 755895,
+      "sha256": "70025b70253488311ffc3dc1fdeb386732d95e8b40eb52c05ece3bac23e9a08d"
+    },
+    "wall-before.png": {
+      "bytes": 2122086,
+      "sha256": "d038463a54db7dd3e6c32273b588b4a060a70df4122731445e34aa63563306b6"
+    },
+    "wall-after.png": {
+      "bytes": 2134346,
+      "sha256": "cca0e1c1fbab8cf29a2c11c1b4986e04a0fa4d92e25730db728338e9fbd1ec88"
+    },
+    "editor-generated-yard.png": {
+      "bytes": 1814457,
+      "sha256": "75e8626d0d9a67176c9049e1cff45216a31fa4888e326b8452db29226bfab624"
+    }
+  }
+}
