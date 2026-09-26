@@ -1,0 +1,22 @@
+{
+  "source_commit": "b0d03a1",
+  "status": "experimental; debris physics fails acceptance",
+  "images": {
+    "wall-before.png": {
+      "bytes": 2005284,
+      "sha256": "f4d019ae881abf422b9560695b7fc5fba7c9fedba27dd441c4317b91b4f522de"
+    },
+    "wall-after.png": {
+      "bytes": 2019242,
+      "sha256": "dac4d8bbbb369477de19e64f0ac42ee53228624b1525be5a06c21e6e3fc80569"
+    },
+    "wall-closeup.png": {
+      "bytes": 1867605,
+      "sha256": "f9244547ade151b9680ff72585a05e5cb138929b158dd7520fcaaf0599d2d019"
+    },
+    "wall-fragments.png": {
+      "bytes": 1260599,
+      "sha256": "2995e11bb7826aceaae4be4a2cd5af8c768b6f43785780fbe15ece26c56cedfb"
+    }
+  }
+}

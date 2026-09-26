@@ -2,6 +2,14 @@
 
 This repository contains September 2026 progress images for the Unreal Engine 5.8 project. They show **work in progress**, not a finished realistic game. Most images are direct 1280 × 720 game-runtime screenshots; individually labeled model inspection renders are exceptions. The chisel comparison below crops only the window border from matched game-window captures; no game pixels were changed. Some exterior views use separate QA map copies for the camera and lighting.
 
+## 26 September: two-brick fracture experiment — debris still fails
+
+**[Open the four-image gallery](screenshots/2026-09-26-chaos-slice/README.md)** — matched FPS before/after, native fracture closeup and the failed ground-debris check. Local source checkpoint `b0d03a1`.
+
+Irregular openings now appear in the real hollow bricks and mortar. **Detached chips still lodge inside/behind the wall; this sample is not accepted or promoted.** Held-input stopping, eight hollow-passage collision checks, editor rebuild protection and Windows cook passed. A short standalone active benchmark peaked at 24.65 ms, with different wall width from the previous test.
+
+![Experimental irregular brick fracture, debris unresolved](screenshots/2026-09-26-chaos-slice/wall-after.png)
+
 ## 26 September: rear-wrist correction and held-input wall preview
 
 **[Open the new 8-image gallery](screenshots/2026-09-26-wrist-wall/README.md)** — matched wrist comparison, actual FPS before/after held-trigger use, and the editor-generated wall. Local source commit `1bf300a`.
